@@ -40,6 +40,7 @@ define network::mroute (
   $routes,
   $interface          = $name,
   $config_file_notify = 'class_default',
+  $ignore_errors      = false,
   $ensure             = 'present'
 ) {
   # Validate our arrays
